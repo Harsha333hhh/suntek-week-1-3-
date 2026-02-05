@@ -1,0 +1,53 @@
+// read all users 
+GET http://localhost:4000/user-api/users
+
+###read user by object id 
+
+GET http://localhost:4000/user-api/users/697dbc1e848b78c34a60d248
+
+###create user 
+
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"madhu",
+    "password":123456,
+    "age":20
+}
+
+###update user 
+
+PUT  http://localhost:4000/user-api/users/697dbc1e848b78c34a60d248
+Content-Type: application/json
+
+{
+    "username":"Harsha",
+    "password":123456,
+    "age":30
+}
+###delete user
+
+DELETE http://localhost:4000/user-api/users/697dbc1e848b78c34a60d248
+
+###get product
+
+GET http://localhost:4000/product-api/product
+
+
+###create a product
+POST http://localhost:4000/product-api/product
+Content-Type: application/json
+
+{
+    "pid":2015,
+    "pname":"phone",
+    "price":2000
+}
+
+###get product by id
+
+GET http://localhost:4000/product-api/product/697f36e28c7ac114f4ca26b5
+
+### delete product
+DELETE http://localhost:4000/product-api/product/697f36e28c7ac114f4ca26b5

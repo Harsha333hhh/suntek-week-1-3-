@@ -1,0 +1,21 @@
+1 .generate package.json
+npm init -y
+2 create server.js
+
+3.install , import "express" and create HTTP server .Assign port 
+
+a install mangoose and connect to mangodb server 
+b.create schema of resource
+c.create model of schema 
+d.perform db operations on that model
+
+create product api 
+{pid,pname,price}
+post 
+get 
+get by id
+put 
+
+
+error handling 
+running validators during update 
