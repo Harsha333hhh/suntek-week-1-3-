@@ -1,26 +1,42 @@
 console.log('This is file 1.js');
 console.log('Hello from 1.js!');
 console.log('1.js is executing some code.');
+
+// variable declarations
 let username="JohnDoe";
 let marks=[95, 90, 98]; // arrsy
 let status=true;
-let student={  //object
+
+// student object with properties
+let student={  
     sno:20,
     sname:"Alice"
 }
+
 let b;
+
+// display student details using template string
 console.log(`Student Number: ${student.sno}, Student Name: ${student.sname}`);
+
+// checking data types of variables
 console.log(typeof b);
 console.log(typeof username); 
 console.log(typeof marks);
 console.log(typeof status); 
-function greet(d,f){  // this is a function
+
+// simple function to add two numbers
+function greet(d,f){  
     console.log('this is a function from 1.js');
     console.log(`Sum is: ${d+f}`);
 }
+
 greet(20,10);
+
+// function to find greatest among three numbers
 function greatest(x,y,z){
+
     console.log(x,y,z);
+
     if (x>y && x>z) {
         console.log("a is greatest");
     }
