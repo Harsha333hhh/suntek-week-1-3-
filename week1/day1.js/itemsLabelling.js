@@ -4,10 +4,10 @@ function label(){
     if (price<500){
         label="Budget";
     }
-    else if (price>=500 && price<=1000){
+    else if (price>=500 && price<=1000){ // labeling items price btw 500 and 1000 
         label="Midrange";
     }
-    else if (price>1000){
+    else if (price>1000){ // greater than 1000
         label="Premium";
     }
     else{
@@ -15,4 +15,5 @@ function label(){
     }
     console.log("label is"+label);
 }
+
 label();
